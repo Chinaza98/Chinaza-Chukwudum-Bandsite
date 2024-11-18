@@ -62,6 +62,10 @@ body {
   &__header {
     color: #afafaf;
     font-size: 18px;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__listing {
