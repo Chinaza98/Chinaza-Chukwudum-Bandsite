@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandsite Website 2</title>
+    <link href="/styles/shows.css" rel="stylesheet" />
+    <link href="/styles/partials/_global.scss" rel="stylesheet" />
+    <script src="../scripts/build-shows-page.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__bio" href="index.html"
+        ><img
+          src="/assets/Logo/Logo-bandsite.svg"
+          class="header__logo"
+          alt="bandsite logo"
+      /></a>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="/index.html">Biography</a>
+          </li>
+          <li class="header__item header__item--active">
+            <a class="header__link" href="/index.html">Shows</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="top">
+      <section class="cover">
+        <h3 class="cover__artist">Beautiful Beasts Album</h3>
+        <h1 class="cover__title">Stripes of Yellow x For the Strings</h1>
+        <!-- <iframe
+          class="cover__iframe"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1639983519&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        >
+        </iframe> -->
+
+        <iframe
+          width="100%"
+          height="300"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1639983519&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        ></iframe>
+        <div
+          style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          "
+        >
+          <a
+            href="https://soundcloud.com/iamodeal"
+            title="Odeal"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Odeal</a
+          >
+          ·
+          <a
+            href="https://soundcloud.com/iamodeal/intro-landmine"
+            title="Intro (Landmine)"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Intro (Landmine)</a
+          >
+        </div>
+      </section>
+    </section>
+
+    <section class="show">
+      <h2>Shows</h2>
+      <table>
+        <tr class="show__detail">
+          <th class="show__header">Date</th>
+          <td class="show__listing">Mon Sept 09 2024</td>
+        </tr>
+
+        <tr class="show__detail">
+          <th class="show__header">Venue</th>
+          <td class="show__listing">Ronald Lane</td>
+        </tr>
+
+        <tr class="show__detail">
+          <th class="show__header">Location</th>
+          <td class="show__listing">San Francisco</td>
+        </tr>
+
+        <!-- <h3 class="show__header">Date</h3>
+        <p class="show__listing">Mon Sept 09 2024</p>
+
+        <h3 class="show__header">Venue</h3>
+        <p class="show__listing">Ronald Lane</p>
+
+        <h3 class="show__header">Location</h3>
+        <p class="show__listing">San Francisco</p> -->
+      </table>
+      <button>Buy Tickets</button>
+    </section>
+
+    <section class="footer">
+      <section class="footer__content">
+        <h3>Get In Touch</h3>
+        <section class="footer__social">
+          <main>
+            <img
+              src="/assets/Icons/SVG/Icon-instagram.svg"
+              alt="Instagram"
+              class="footer__icon"
+            />
+          </main>
+          <main>
+            <img
+              src="/assets/Icons/SVG/Icon-facebook.svg"
+              alt="Facebook"
+              class="footer__icon"
+            />
+          </main>
+          <main>
+            <img
+              src="/assets/Icons/SVG/Icon-twitter.svg"
+              alt="Twitter"
+              class="footer__icon"
+            />
+          </main>
+        </section>
+
+        <section>
+          <img
+            src="/assets/Logo/Logo-bandsite.svg"
+            class="footer__logo"
+            alt="bandsite logo"
+          />
+        </section>
+      </section>
+      <section class="footer__section">
+        <main>
+          <h3>The Bees Knees Management</h3>
+
+          <p>503 Broadway Penthouse,</p>
+
+          <p>New York, NY 10012, USA</p>
+
+          <p>info@thebeesknees.com</p>
+        </main>
+        <main>
+          <h3>Limitless Artist Group</h3>
+
+          <p>Booking Agent for</p>
+
+          <p>US / South America / Japan</p>
+
+          <p>bookings@limitlessag.com</p>
+        </main>
+        <main>
+          <h3>ARCH Entertainment</h3>
+
+          <p>Booking Agent for</p>
+
+          <p>UK / EU / AU</p>
+
+          <p>bookings@archentertainment.com</p>
+        </main>
+      </section>
+
+      <main class="footer__rights">
+        <p>Copyright The Bees Knees © 2023 All Rights Reserved</p>
+      </main>
+    </section>
+  </body>
+</html>

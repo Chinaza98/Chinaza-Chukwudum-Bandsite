@@ -119,125 +119,44 @@ body {
   font-family: "NunitoSans", sans-serif;
 }
 
-.hero {
-  background-image: url("/assets/images/hero-bio.jpg");
+.cover {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  background-image: url("../assets/images/hero-shows.jpg");
   background-size: cover;
   background-position: center;
-  max-width: 100%;
-  height: 40vh;
+  min-height: 50vh;
+  padding: 2rem;
 }
-.hero__title {
+.cover__iframe {
+  width: 50%;
+}
+.cover__artist {
   color: #fff;
-  font-size: 32px;
-  padding: 1rem;
+}
+.cover__title {
+  color: #fff;
+  font-size: 36px;
 }
 
-.card {
-  padding: 1rem;
-}
-.card__image {
-  display: flex;
-  justify-content: center;
-  height: 50vh;
-}
-.card__description {
-  padding: 1rem;
-}
-
-.main {
-  font-weight: 400;
-  font-size: 24px;
-  padding: 1rem;
-}
-.main__text {
-  font-size: 20px;
-  margin-bottom: 3rem;
-  display: flex;
-  gap: 3rem;
-}
-@media screen and (min-width: 768px) {
-  .main__text {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .main__text {
-    padding: 3rem;
-  }
-}
-
-.gallery {
-  background-color: #e1e1e1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-evenly;
-  flex-wrap: wrap;
-}
-.gallery__container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-}
-.gallery__item {
-  text-align: center;
-  background-color: inherit;
-  margin: 20px;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (min-width: 768px) {
-  .gallery__item {
-    margin: 3vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .gallery__item {
-    margin: 1.25vw 0;
-  }
-}
-.gallery__image {
-  width: 100%;
-}
-
-.comments {
-  margin: 2rem;
-}
-.comments__section {
-  display: flex;
-  gap: 4rem;
-  border-bottom: solid #afafaf;
-  padding-bottom: 2rem;
-}
-.comments__list {
-  list-style-type: none;
+.show {
   margin: 0;
 }
-.comments__item {
-  border-bottom: solid #afafaf;
-  padding-bottom: 2rem;
-  display: flex;
-}
-.comments__logo {
-  border-radius: 90%;
-  height: 5vh;
-  margin-top: 1rem;
-}
-.comments__main {
+.show__header {
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
+  text-align: left;
 }
-.comments__date {
-  color: #afafaf;
+@media screen and (min-width: 768px) {
+  .show__header {
+    flex-direction: row;
+  }
 }
-
-.comments__image {
-  border-radius: 90%;
-  width: 5rem;
-}/*# sourceMappingURL=bio.css.map */
+.show__detail {
+  display: flex;
+  flex-direction: column;
+}
+.show__listing {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=shows.css.map */

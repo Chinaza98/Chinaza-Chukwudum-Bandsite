@@ -1,0 +1,61 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+@use "partials/fonts" as *;
+@use "partials/global" as *;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "NunitoSans", sans-serif;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  padding: 2rem;
+
+  &__iframe {
+    width: 50%;
+  }
+
+  &__artist {
+    color: #fff;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 36px;
+  }
+}
+
+.show {
+  margin: 0;
+
+  &__detail {
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__listing {
+    display: flex;
+    flex-direction: column;
+  }
+}
