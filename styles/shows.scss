@@ -1,0 +1,98 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+@use "partials/fonts" as *;
+@use "partials/global" as *;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "NunitoSans", sans-serif;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      rgba(76, 0, 100, 0.5),
+      rgba(76, 0, 100, 0.5)
+    ),
+    url("../assets/images/hero-shows.jpg");
+  // border-image-source: linear-gradient(red, blue);
+
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  padding: 2rem;
+
+  &__iframe {
+    width: 50%;
+  }
+
+  &__artist {
+    color: #fff;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 36px;
+  }
+}
+
+.show {
+  width: 100%;
+  margin: 0;
+  padding-left: 1rem;
+  border-bottom: #afafaf solid;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  &__container {
+    padding: 1rem;
+    @include tablet {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__header {
+    color: #afafaf;
+    font-size: 18px;
+  }
+
+  &__listing {
+    font-size: 18px;
+  }
+
+  &__label {
+    padding: 1rem 0 1rem;
+
+    @include tablet {
+      padding: 1rem;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__listing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__cta {
+    padding: 10px 16px;
+    background-color: #323232;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+}

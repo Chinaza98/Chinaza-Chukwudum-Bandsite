@@ -1,6 +1,10 @@
 @use "partials/variables" as *;
 @use "partials/mixins" as *;
 @use "partials/fonts" as *;
+<<<<<<< HEAD
+=======
+@use "partials/global" as *;
+>>>>>>> sprint-2
 
 html,
 body {
@@ -9,6 +13,7 @@ body {
   font-family: "NunitoSans", sans-serif;
 }
 
+<<<<<<< HEAD
 .header {
   background-color: #323232;
 
@@ -56,6 +61,14 @@ body {
 
 .hero {
   background-image: url("/assets/Images/hero-bio.jpg");
+=======
+.hero {
+  background-image: linear-gradient(
+      rgba(76, 0, 100, 0.5),
+      rgba(76, 0, 100, 0.5)
+    ),
+    url("/assets/images/hero-bio.jpg");
+>>>>>>> sprint-2
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -63,34 +76,37 @@ body {
   background-position: center;
   max-width: 100%;
   height: 40vh;
-}
+<<<<<<< HEAD
+=======
 
-.hero__title {
-  color: #fff;
-  font-size: 32px;
-  padding: 1rem;
+  &__title {
+    color: #fff;
+    font-size: 32px;
+    padding: 1rem;
+  }
+>>>>>>> sprint-2
 }
 
 .card {
   padding: 1rem;
-}
 
-.card__image {
-  display: flex;
-  justify-content: center;
-  height: 50vh;
-}
+  &__image {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+  }
 
-.card__description {
-  padding: 1rem;
+  &__description {
+    padding: 1rem;
+  }
 }
 
 .main {
   font-weight: 400;
   font-size: 24px;
   padding: 1rem;
-}
 
+<<<<<<< HEAD
 .main__text {
   font-size: 20px;
   margin-bottom: 3rem;
@@ -105,6 +121,23 @@ body {
 
   @include desktop {
     padding: 3rem;
+=======
+  &__text {
+    font-size: 20px;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 3rem;
+
+    @include tablet {
+      display: flex;
+
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      padding: 3rem;
+    }
+>>>>>>> sprint-2
   }
 }
 
@@ -112,16 +145,36 @@ body {
   background-color: #e1e1e1;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 
   justify-content: space-around;
   align-content: space-evenly;
   flex-wrap: wrap;
+=======
+  justify-content: space-around;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+
+  &__container {
+    margin: 0 20px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: space-evenly;
+    }
+  }
+>>>>>>> sprint-2
 
   &__item {
     text-align: center;
     background-color: inherit;
     margin: 20px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> sprint-2
     max-width: 100%;
     object-fit: cover;
 
@@ -132,6 +185,7 @@ body {
     @include desktop {
       margin: 1.25vw 0;
     }
+<<<<<<< HEAD
   }
 }
 
@@ -182,4 +236,53 @@ body {
 
 .footer__rights {
   margin-top: 6rem;
+=======
+  }
+  &__image {
+    width: 100%;
+  }
+}
+
+.comments {
+  margin: 2rem;
+
+  &__section {
+    display: flex;
+    gap: 4rem;
+    border-bottom: solid #afafaf;
+    padding-bottom: 2rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  &__item {
+    border-bottom: solid #afafaf;
+    padding-bottom: 2rem;
+    display: flex;
+  }
+
+  &__logo {
+    border-radius: 90%;
+    height: 5vh;
+    margin-top: 1rem;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  &__date {
+    color: #afafaf;
+  }
+}
+
+.comments__image {
+  border-radius: 90%;
+  width: 5rem;
+>>>>>>> sprint-2
 }
