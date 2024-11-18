@@ -24,23 +24,34 @@ body {
   background-color: #323232;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 .header__logo {
-  width: 7rem;
   margin-top: 2rem;
-  align-content: center;
+  width: 7rem;
+  align-self: center;
 }
 .header__link {
   font-weight: 500;
   color: #fff;
+}
+.header__nav {
+  width: 100%;
 }
 
 .header__item {
   list-style-type: none;
 }
 
-.header__link {
+.header__link1 {
   text-decoration: none;
+  border-bottom: solid 2px #fff;
+  color: #fff;
+}
+
+.header__link2 {
+  text-decoration: none;
+  color: #afafaf;
 }
 
 .header__list {
@@ -50,17 +61,14 @@ body {
 }
 
 .hero {
-  background-image: url("/hero-bio.jpg");
+  background-image: url("/assets/Images/hero-bio.jpg");
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-@media screen and (min-width: 320px) {
-  .hero {
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-  }
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 40vh;
 }
 
 .hero__title {
@@ -91,39 +99,66 @@ body {
 
 .main__text {
   font-size: 20px;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .main__text {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__text {
+    padding: 3rem;
+  }
 }
 
 .gallery {
   background-color: #e1e1e1;
-}
-.gallery__container {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
-}
-@media screen and (min-width: 320px) {
-  .gallery__container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-  }
+  justify-content: space-around;
+  align-content: space-evenly;
+  flex-wrap: wrap;
 }
 .gallery__item {
   text-align: center;
-  margin: 20px 0;
-  padding: 20px 0;
+  background-color: inherit;
+  margin: 20px;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    margin: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery__item {
+    margin: 1.25vw 0;
+  }
 }
 
 .footer {
   background-color: #323232;
   color: #fff;
+  padding: 1rem;
 }
-
+.footer__body {
+  padding-bottom: 1rem;
+}
 .footer__content {
   position: relative;
 }
-
+@media screen and (min-width: 768px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer__icon {
   width: 1rem;
   padding: 1rem;
@@ -132,7 +167,12 @@ body {
 @media screen and (min-width: 320px) {
   .footer__logo {
     position: absolute;
-    top: 35rem;
+    top: 43rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    position: inherit;
   }
 }
 
@@ -142,6 +182,13 @@ body {
   width: 20%;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .footer__rights {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }/*# sourceMappingURL=bio.css.map */
