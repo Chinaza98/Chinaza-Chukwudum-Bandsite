@@ -26,10 +26,20 @@ body {
   flex-direction: column;
   max-width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+}
 .header__logo {
   width: 7rem;
   margin-top: 2rem;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-top: 1rem;
+  }
 }
 .header__bio {
   text-align: center;
@@ -40,6 +50,16 @@ body {
 }
 .header__nav {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__nav {
+    width: 50%;
+  }
 }
 .header__item {
   padding: 1rem 0;
@@ -122,7 +142,7 @@ body {
 .cover {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/images/hero-shows.jpg");
+  background-image: linear-gradient(rgba(76, 0, 100, 0.5), rgba(76, 0, 100, 0.5)), url("../assets/images/hero-shows.jpg");
   background-size: cover;
   background-position: center;
   min-height: 50vh;
@@ -140,16 +160,40 @@ body {
 }
 
 .show {
+  width: 100%;
   margin: 0;
-}
-.show__header {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  padding-left: 1rem;
+  border-bottom: #afafaf solid;
 }
 @media screen and (min-width: 768px) {
-  .show__header {
-    flex-direction: row;
+  .show {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+.show__container {
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .show__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.show__header {
+  color: #afafaf;
+  font-size: 18px;
+}
+.show__listing {
+  font-size: 18px;
+}
+.show__label {
+  padding: 1rem 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .show__label {
+    padding: 1rem;
   }
 }
 .show__detail {
@@ -159,4 +203,13 @@ body {
 .show__listing {
   display: flex;
   flex-direction: column;
+}
+.show__cta {
+  padding: 10px 16px;
+  background-color: #323232;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=shows.css.map */

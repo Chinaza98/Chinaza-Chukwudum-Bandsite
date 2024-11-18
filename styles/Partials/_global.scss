@@ -16,10 +16,18 @@ body {
   flex-direction: column;
   max-width: 100%;
 
+  @include tablet {
+    flex-direction: row;
+  }
+
   &__logo {
     width: 7rem;
     margin-top: 2rem;
     text-align: center;
+
+    @include tablet {
+      margin-top: 1rem;
+    }
   }
 
   &__bio {
@@ -33,6 +41,13 @@ body {
 
   &__nav {
     width: 100%;
+    @include tablet {
+      width: 60%;
+    }
+
+    @include desktop {
+      width: 50%;
+    }
   }
 
   &__item {

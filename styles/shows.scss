@@ -13,7 +13,13 @@ body {
 .cover {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/images/hero-shows.jpg");
+  background-image: linear-gradient(
+      rgba(76, 0, 100, 0.5),
+      rgba(76, 0, 100, 0.5)
+    ),
+    url("../assets/images/hero-shows.jpg");
+  // border-image-source: linear-gradient(red, blue);
+
   background-size: cover;
   background-position: center;
   min-height: 50vh;
@@ -34,15 +40,39 @@ body {
 }
 
 .show {
+  width: 100%;
   margin: 0;
+  padding-left: 1rem;
+  border-bottom: #afafaf solid;
 
-  &__header {
+  @include tablet {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    padding: 1rem;
+  }
+
+  &__container {
+    padding: 1rem;
+    @include tablet {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__header {
+    color: #afafaf;
+    font-size: 18px;
+  }
+
+  &__listing {
+    font-size: 18px;
+  }
+
+  &__label {
+    padding: 1rem 0 1rem;
 
     @include tablet {
-      flex-direction: row;
+      padding: 1rem;
     }
   }
 
@@ -54,5 +84,15 @@ body {
   &__listing {
     display: flex;
     flex-direction: column;
+  }
+
+  &__cta {
+    padding: 10px 16px;
+    background-color: #323232;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 1rem;
   }
 }
