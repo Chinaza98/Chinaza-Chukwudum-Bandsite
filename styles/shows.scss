@@ -62,37 +62,39 @@ body {
   &__header {
     color: #afafaf;
     font-size: 18px;
-  }
-
-  &__listing {
-    font-size: 18px;
-  }
-
-  &__label {
-    padding: 1rem 0 1rem;
 
     @include tablet {
-      padding: 1rem;
+      display: flex;
+
+      display: none;
     }
-  }
 
-  &__detail {
-    display: flex;
-    flex-direction: column;
-  }
+    &__listing {
+      font-size: 20px;
+    }
 
-  &__listing {
-    display: flex;
-    flex-direction: column;
-  }
+    &__label {
+      padding: 1rem 0 1rem;
 
-  &__cta {
-    padding: 10px 16px;
-    background-color: #323232;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 1rem;
+      @include tablet {
+        padding: 1rem;
+        display: flex;
+      }
+    }
+
+    &__detail {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__cta {
+      padding: 10px 16px;
+      background-color: #323232;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
   }
 }

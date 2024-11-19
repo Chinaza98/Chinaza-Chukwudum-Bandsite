@@ -185,26 +185,29 @@ body {
   color: #afafaf;
   font-size: 18px;
 }
-.show__listing {
-  font-size: 18px;
+@media screen and (min-width: 768px) {
+  .show__header {
+    display: flex;
+    display: none;
+  }
 }
-.show__label {
+.show__header__listing {
+  font-size: 20px;
+}
+.show__header__label {
   padding: 1rem 0 1rem;
 }
 @media screen and (min-width: 768px) {
-  .show__label {
+  .show__header__label {
     padding: 1rem;
+    display: flex;
   }
 }
-.show__detail {
+.show__header__detail {
   display: flex;
   flex-direction: column;
 }
-.show__listing {
-  display: flex;
-  flex-direction: column;
-}
-.show__cta {
+.show__header__cta {
   padding: 10px 16px;
   background-color: #323232;
   border-radius: 5px;
