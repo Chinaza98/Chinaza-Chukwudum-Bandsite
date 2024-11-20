@@ -130,3 +130,32 @@ body {
     margin-top: 6rem;
   }
 }
+
+button {
+  padding: 10px 16px;
+  background-color: #323232;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    width: 30%;
+  }
+
+  // @include desktop {
+  //   width: 20%;
+  // }
+}
+
+.show__label {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
