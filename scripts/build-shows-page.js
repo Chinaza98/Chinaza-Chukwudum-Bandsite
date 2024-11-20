@@ -118,7 +118,7 @@ for (let i = 0; i < showsArray.length; i++) {
   labelElement.appendChild(placeElement);
 
   let ctaElement = document.createElement("button");
-  ctaElement.classList.add("shows__cta");
+  ctaElement.classList.add("show__cta");
   ctaElement.textContent = "Buy Tickets";
-  containerElement.appendChild(ctaElement);
+  labelElement.appendChild(ctaElement);
 }
