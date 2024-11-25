@@ -198,8 +198,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .show {
-    display: flex;
-    padding: 1rem;
+    padding: 2rem;
+    width: 100%;
   }
 }
 .show__container {
